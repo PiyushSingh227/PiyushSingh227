@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.js">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+    <script src="sliderResponsive.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Product</title>
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="container">
+
+                <div class="nav">
+
+
+
+                    <img src="img/logo.png" alt="">
+
+
+                    <div class="row">
+                        <div class="nav-links" id="navLinks">
+                            <i class="fa fa-times nne" onclick="hideMenu()"></i>
+                            <ul>
+
+                                <a href="#">
+                                    <li>HOME
+                                </a></li>
+                                <a href="#">
+                                    <li>PRODUCT
+                                </a></li>
+                                <a href="#">
+                                    <li>ABOUT
+                                </a></li>
+                                <a href="#">
+                                    <li>CONTACT
+                                </a></li>
+                                 <!-- Theme change button  -->
+                        <li> <input type="checkbox" class="checkbox" id="checkbox">
+                            <label for="checkbox" class="label">
+                                <i class="fa fa-moon-o"></i>
+                                <i style="color: white;" class="fa fa-sun-o"></i>
+                                <div class="ball"></div>
+                            </label>
+                        </li>
+
+                            </ul>
+                        </div>
+                        <i class="fa fa-bars nne" onclick="showMenu()"></i>
+                    </div>
+                </div>
+    </header>
+ <!-------------------  Dark theme ------------------->
+
+ <script>
+    const checkbox =
+        document.getElementById('checkbox');
+    checkbox.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+        document.body.classList.toggle('white');
+    });
+</script>
+
+
+<!-- JavaScript for Toggle Menu  -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-400px";
+    }
+</script>
+    <!-------------------  slideshow  ------------------->
+
+    <div class="row2Wrap">
+
+
+
+
+        <!-- <h3>Individual slide text</h3> -->
+
+        <!-- Slider 1 -->
+        <div class="slider" id="slider3">
+            <div style="background-image:url(img/banner3.jpg)">
+
+                <!-- <span>
+                    <h2>I'm a title for Slide #1</h2>
+                </span> -->
+            </div>
+            <div style="background-image:url(img/banner4.jpg)">
+
+                <!-- <span>
+                    <h2>I'm a title for Slide #2</h2>
+                </span> -->
+            </div>
+            <div style="background-image:url(img/banner7.jpg)">
+                <!-- <span>
+                    <h2>I'm a title for Slide #3</h2>
+                </span> -->
+            </div>
+            <div style="background-image:url(img/banner6.jpg)">
+                <!-- <span>
+                    <h2>I'm a title for Slide #3</h2>
+                </span> -->
+            </div>
+            <!-- The Arrows -->
+            <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+                </svg></i>
+            <i class="right" class="arrows" style="z-index:2; position:absolute;">
+                <svg viewBox="0 0 100 100">
+                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                        transform="translate(100, 100) rotate(180) "></path>
+                </svg></i>
+            <!-- Title Bar -->
+            <!--     <span class="titleBar">
+            <h1>I am like a leaf in the wind.</h1> 
+            <p>Watch me soar!</p>
+        </span> -->
+        </div>
+
+    </div>
+    <section>
+        <div class="center">
+            <h1> Product Range</h1>
+            <p>We Have Got Some Good Varity Of Product And Unique Product</p>
+        </div>
+
+
+        <div class="service-box">
+            <div class="single-service">
+                <img src="img/barber-man.jpg">
+                <div class="service-desc">
+                    <h3>Hair Styling</h3>
+                    <hr>
+                    <p>This is text under description of border foundation This is text under description of border
+                        foundation
+                    </p>
+                    <a href="#"> <button class="btn">MORE</button></a>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="single-service">
+                <img src="img/barber-man.jpg">
+                <div class="service-desc">
+                    <h3>Beard Trim</h3>
+                    <hr>
+                    <p>This is text under description of border foundation This is text under description of border
+                        foundation
+                    </p>
+                    <a href="#"> <button class="btn">MORE</button></a>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="single-service">
+                <img src="img/barber-man.jpg">
+                <div class="service-desc">
+                    <h3>Hair cut</h3>
+                    <hr>
+                    <p>This is text under description of border foundation This is text under description of border
+                        foundation
+                    </p>
+                    <a href="#"> <button class="btn">MORE</button></a>
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+
+
+    </section>
+    <section>
+        <div class="banner3">
+            <h1 class="mobile">Click ME</h1>
+            <p>This is text under description of border foundation This is text under description of border foundation
+                This is text under description of border foundation This is text under description of border foundation
+                This is text under description of border foundation This is text under description of border foundation
+                This is text under description of border foundation This is text under description of border foundation
+                This is text under description of border foundation This is text under description of border foundation
+                This is text under description of border foundation This is text under description of border foundation
+                This is text under description of border foundation This is text under description of border foundation
+            </p>
+            <center><button class="btn2">Great</button></center>
+        </div>
+
+    </section>
+
+    <section id="Aboutusbg">
+
+        <div class="row">
+            <div class="col-lg-6 md">
+                <img src="img/k.jpg" alt="" style="height: 400px;">
+            </div>
+            <div class="container">
+                <div class="col-lg-6">
+                    <div class="aboutUs">
+                        <h1>About US</h1>
+                        <p>Wanna Try Our Amazing Products Its Great,You Guys will Love it. It will Fell great To use And
+                            Great To Help Your Daily Needs.Wanna Try Our Amazing Products Its Great,You Guys will Love
+                            it.
+                            It will Fell great To use And Great To Help Your Daily Needs
+
+                        </p>
+                        <button class="btn2">More Info</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <section class="Contact">
+       
+        <div class="container">
+            <div class="row">
+                <div class="Contactpd">
+                <div class="col-lg-4">
+                    <h4 style="margin-left: 10px;text-align: start; font-size: 20px;">
+                        Enquiry Now
+                    </h4>
+                   
+                    <input type="text" id="fName" name="First Name" placeholder="Your Name">
+                  
+                   
+                    <input type="text" id="Contact" name="Last Name" placeholder="Your Mobile Number">
+                   
+                    <input type="text" id="Address" name="Last Name" placeholder="Your Full Address">
+                  
+                    <input type="text" id="EmailID" name="Last Name" placeholder="Your Email-ID">
+<br>
+                    <button class="btn2" style="margin-left: 10px;padding: 5px 7px 5px 7px;">SUBMIT</button>
+                </div>
+                <div class="col-lg-4 mobile2">
+                    <h4 style="font-size: 20px;">Get In Touch</h4>
+                    <div class="font">
+                    <i class="fa fa-home" style="font-size:26px;color: red;"></i>
+                <span>
+                    <h3>XYZ Road, ABC Building</h3>
+                        <p> Bangalore, Karnataka,In</p>
+                    </span> </div>   
+                    <div class="font">
+                    <i class="fa fa-phone" style="font-size:26px;color: red;"></i>
+                    
+                    <span>
+                        <h3>XYZ Road, ABC Building</h3>
+                            <p> Bangalore, Karnataka,In</p>
+                        </span> </div>   
+                        <div class="font">
+                    <i class="fa fa-envelope"style="font-size:26px;color: red;"></i>
+                 
+                    <span>
+                        <h3>XYZ Road, ABC Building</h3>
+                            <p> Bangalore, Karnataka,In</p>
+                        </span> </div>   
+                </div>
+            </div>
+                <div class="col-lg-4">
+                    <h4 style="font-size: 20px;">Map</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7539.372136687367!2d72.89361129545068!3d19.121423253660303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7f1c6116755%3A0xec0d208306df3a73!2sIndian%20Register%20Of%20Shipping!5e0!3m2!1sen!2sin!4v1648017432151!5m2!1sen!2sin"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="social-links">
+     <ul>
+        <a href="#"><li class="facebook"><i class="fa fa-facebook"></i></li></a>
+        <a href="#"><li class="twitter"><i class="fa fa-twitter"></i></li></a>
+        <a href="#"><li class="youtube"><i class="fa fa-youtube-play"></i></li>
+        </a>
+        <a href="#"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a>
+        <a href="#"><li class="instagram"><i class="fa fa-instagram"></i></li>
+        </a>
+     </ul>
+    </div>
+    <i class="fa fa-arrow-up bottomright" id="top" onclick="scrollToTop()"></i>
+    <p style="margin-top: 10px; font-size: 20px;text-align: center;" class="bottom">Made by <i class="fa fa-heart-o"></i> Piyush Singh </p>
+    </footer>
+<!-- Scroll to Top -->
+
+<script>
+       function scrollToTop() {
+            window.scrollTo(0,0) * 5;
+        }
+</script>
+
+
+<script>
+        $(document).ready(function () {
+
+            $("#slider1").sliderResponsive({
+                // Using default everything
+                // slidePause: 5000,
+                // fadeSpeed: 800,
+                // autoPlay: "on",
+                // showArrows: "off", 
+                // hideDots: "off", 
+                // hoverZoom: "on", 
+                // titleBarTop: "off"
+            });
+
+            $("#slider2").sliderResponsive({
+                fadeSpeed: 600,
+                autoPlay: "off",
+                showArrows: "on",
+                hideDots: "on"
+            });
+
+            $("#slider3").sliderResponsive({
+                hoverZoom: "on",
+                hideDots: "on",
+                slidePause: 4000,
+                autoPlay: "on",
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
